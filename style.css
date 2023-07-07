@@ -97,7 +97,9 @@ nav ul li a:hover::after{
     flex-basis: 60%;
     font-size: 20px;
 }
-
+.about-col-2 p{
+    margin-bottom: 10px;
+}
 .sub-title{
     font-size: 55px;
     font-weight: 600;
@@ -192,19 +194,35 @@ nav ul li a:hover::after{
     display: inline;
     float: right
 }
+
 .company-link:link {
     color: #b54769;
     background-color: transparent;
     text-decoration: underline;
   }
-  
 .company-link:visited {
     color: #b54769;
     background-color: transparent;
     text-decoration: none;
 }
-  
 .company-link:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.terminology-link:link {
+    color: #ababab;
+    background-color: transparent;
+    text-decoration: underline;
+    font-style: italic;
+}
+.terminology-link:visited {
+    color: #ababab;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.terminology-link:hover {
     color: green;
     background-color: transparent;
     text-decoration: underline;
