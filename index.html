@@ -27,7 +27,7 @@
         </nav>
         <div class="header-text">
             <h1>Hi, I'm <span>Shuhao Liu</span></h1>
-            <p>ML Engineer</p>
+            <p>ML Research Engineer</p>
         </div>
     </div>
 </div>
@@ -35,11 +35,11 @@
 <!-- -----------about---------- -->
 <div id="about">
     <div class="container"nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}>
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }>
         <div class="row">
             <div class="about-col-1">
                 <img src="images/grad_photo.jpg">
@@ -233,7 +233,6 @@
                 <a href="images/ShuhaoLiu resume.pdf" download class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
-                <!--
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
@@ -241,7 +240,6 @@
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
-                -->
             </div>
         </div>
     </div>
@@ -250,7 +248,7 @@
     </div>
 </div>
 
-
+<!-- --------JS for redirecting tabs within the webpage---------- -->
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -267,6 +265,7 @@
     }
 </script>
 
+<!-- --------JS for opening side menu in mobile mode---------- -->
 <script>
     var sidemeu = document.getElementById("sidemenu");
 
@@ -278,8 +277,9 @@
     }
 </script>
 
+<!-- --------JS for connecting to google sheet---------- -->
 <script>
-    const scriptURL = '< add you own link here >' // add your own app script link here
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwANoSolL7dcKNR3tabBAleFHjZlSUdVEbdkZbAYc0k5y-n7KsSEkQ7LSU_wpO_yQj/exec' // add your own app script link here
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
   
@@ -291,7 +291,7 @@
             setTimeout(function(){
                 msg.innerHTML = ""
             },5000)
-            form.reset()
+            /*form.reset()*/
         })
         .catch(error => console.error('Error!', error.message))
     })
