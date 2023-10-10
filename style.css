@@ -18,6 +18,7 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    margin-bottom: 40px;
 }
 
 .container{
@@ -62,19 +63,23 @@ nav ul li a:hover::after{
 
 .header-text{
     font-size: 30px;
-    padding: 40px 0;
+    padding: 20px 0 0 0;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .header-text h1{
     font-size: 55px;
+    padding: 10px 0;
 }
 
 .header-text h1 span{
     color: #ff004f;
 }
 
+.visit-count {
+    display: none;
+}
 /* -----------about--------------- */
 #about{
     padding: 20px 0;
